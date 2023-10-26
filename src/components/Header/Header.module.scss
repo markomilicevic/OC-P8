@@ -1,0 +1,54 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+$header-desktop-breakpoint-width: 1240px;
+
+.header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 27px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media screen and (min-width: $header-desktop-breakpoint-width) {
+		max-width: $desktop-breakpoint-width;
+		margin-top: 45px;
+		margin-bottom: 50px;
+	}
+}
+
+.logo {
+	width: 145px;
+	height: 47px;
+	margin-right: 20px;
+
+	@media screen and (min-width: $header-desktop-breakpoint-width) {
+		width: 210px;
+		height: 68px;
+	}
+}
+
+.nav_list {
+	display: flex;
+	flex-direction: row;
+	gap: 26px;
+
+	@media screen and (min-width: $header-desktop-breakpoint-width) {
+		gap: 60px;
+	}
+}
+
+.nav_link {
+	text-transform: uppercase;
+	color: $primary-color;
+	font-size: 12px;
+	font-weight: $font-weight-medium;
+
+	@media screen and (min-width: $header-desktop-breakpoint-width) {
+		text-transform: none;
+		font-size: 24px;
+	}
+}

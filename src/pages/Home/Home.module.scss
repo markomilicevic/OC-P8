@@ -1,0 +1,48 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.home {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		max-width: $desktop-breakpoint-width;
+	}
+}
+
+.banner {
+	height: 111px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		height: 223px;
+	}
+}
+
+.listings {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		border-radius: 25px;
+		background: #f6f6f6;
+		padding: 56px 50px 43px 50px;
+		row-gap: 50px;
+		column-gap: 60px;
+		margin-top: 43px;
+	}
+}
+
+.listing {
+	width: 100%;
+	height: 255px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		height: 340px;
+	}
+}
