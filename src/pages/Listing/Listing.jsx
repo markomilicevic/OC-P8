@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { ALL_LISTINGS_URL } from "../../constants";
 import useFetch from "../../hooks/useFetch";
 import Carousel from "../../components/Carousel";
