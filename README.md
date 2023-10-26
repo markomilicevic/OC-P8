@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# OC-P8
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+Here is the P8 exercise of the Web Integrator course at OpenClassrooms
 
-In the project directory, you can run:
+![](https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png)
 
-### `yarn start`
+## Constraints
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Follow the exercice rules on the OpenClassrooms website
+- [Create React App](https://create-react-app.dev/) for React
+- [React Router](https://reactrouter.com/en/main) for the routing
+- [SCSS](https://sass-lang.com/) for the styling
+- **No other library/tool**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `yarn test`
+- Git versionned ([Git SCM](https://git-scm.com/))
+- GitHub social coded using **Merge Requests** features ([GitHub](https://github.com/))
+- 4 HTML5 pages: Home, About, Listing and Not Found
+- **Mobile-first** and Responsive for the Desktop ([Wikipedia Responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design))
+- HTML5 valid ([W3C Markup Validation Service](https://validator.w3.org/))
+- CSS3 valid ([W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/))
+- Using a single JSON [mock file](https://en.wikipedia.org/wiki/Mock_object) for the data
+- [React](https://react.dev/) standalone components with dedicate foldering
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Local development
 
-### `yarn build`
+### Install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install the project's dependencies:
+- Verify that `yarn` ([Yarn is a package manager](https://yarnpkg.com/)) is installed
+- Then run:
+```
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project:
+```
+yarn start
+```
 
-### `yarn eject`
+[http://localhost:3000/](http://localhost:3000/) will open automatically in your default browser
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All local modifications will reload automatically the current page
