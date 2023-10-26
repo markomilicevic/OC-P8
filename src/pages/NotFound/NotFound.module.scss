@@ -1,0 +1,52 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.not_found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		max-width: $desktop-breakpoint-width;
+	}
+}
+
+.headline {
+	font-size: 96px;
+	font-weight: $font-weight-bold;
+	color: $primary-color;
+	margin: 65px 0 55px 0;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		font-size: 288px;
+		margin: 80px 0 70px 0;
+	}
+}
+
+.paragraph {
+	font-size: 18px;
+	font-weight: $font-weight-medium;
+	color: $primary-color;
+	text-align: center;
+	margin: 55px 0 55px 0;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		font-size: 36px;
+		margin: 70px 0 70px 0;
+	}
+}
+
+.link {
+	font-size: 14px;
+	font-weight: $font-weight-medium;
+	color: $primary-color;
+	text-decoration: underline;
+	margin: 55px 0 65px 0;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		font-size: 18px;
+		margin: 80px 0 70px 0;
+	}
+}
