@@ -1,0 +1,16 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: 500;
+
+	a {
+		color: $primary-color;
+		text-decoration: underline;
+	}
+}

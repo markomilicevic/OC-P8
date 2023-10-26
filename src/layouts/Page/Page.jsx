@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import styles from "./Page.module.scss";
 
 const Page = ({ children }) => (
-	<div>
+	<div className={styles.page}>
 		<Header />
 		<Outlet />
 		<Footer />
