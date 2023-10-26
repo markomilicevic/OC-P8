@@ -1,0 +1,35 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.about {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		max-width: $desktop-breakpoint-width;
+	}
+}
+
+.banner {
+	height: 111px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		height: 223px;
+	}
+}
+
+.sections {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 10px;
+	margin-top: 10px;
+	gap: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		margin: 30px 108px 0 108px;
+		gap: 30px;
+	}
+}
