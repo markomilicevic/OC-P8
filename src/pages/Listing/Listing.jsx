@@ -23,6 +23,12 @@ const Listing = () => {
 	useEffect(() => {
 		if (data) {
 			const currentListing = data.find((listing) => listing.id === listingId);
+			if (!currentListing) {
+				// The passed listingId is not existing
+				// The step #9 except a redirection to the error page
+				navigate("/404");
+				return;
+			}
 			setListing(currentListing);
 			setIsReady(true);
 		}
