@@ -1,0 +1,36 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.host {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+
+	strong {
+		color: $primary-color;
+		font-size: 12px;
+		font-weight: $font-weight-medium;
+
+		@media screen and (min-width: $desktop-breakpoint-width) {
+			font-size: 18px;
+		}
+	}
+}
+
+.picture {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		width: 64px;
+		height: 64px;
+	}
+}

@@ -1,0 +1,15 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.tag {
+	font-size: 10px;
+	font-weight: $font-weight-medium;
+	color: white;
+	background-color: $primary-color;
+	padding: 5px 30px 5px 30px;
+	border-radius: 10px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		font-size: 14px;
+		padding: 5px 40px 5px 40px;
+	}
+}

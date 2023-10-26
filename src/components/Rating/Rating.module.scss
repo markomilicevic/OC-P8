@@ -1,0 +1,21 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.rating {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		gap: 15px;
+	}
+}
+
+.star {
+	width: 18px;
+	height: 18px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		width: 34px;
+		height: 34px;
+	}
+}
