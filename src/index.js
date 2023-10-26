@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Page from "./layouts/Page";
+import Home from "./pages/Home";
+import Listing from "./pages/Listing";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Data-Router is mandatory in order to have the `loader`s and `errorElement`s
+// SOURCE: https://reactrouter.com/en/dev/route/error-element
+const router = createBrowserRouter([
+	{
+		element: <Page />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/listing/:listingId",
+				element: <Listing />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+			{
+				path: "*",
+				element: <NotFound />,
+			},
+		],
+	},
+]);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<RouterProvider router={router} />);
