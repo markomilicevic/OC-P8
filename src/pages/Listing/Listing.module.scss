@@ -19,3 +19,103 @@
 		height: 415px;
 	}
 }
+
+.introduction {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		flex-direction: row;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: $font-weight-medium;
+	color: $primary-color;
+	padding-top: 15px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		font-size: 36px;
+		padding-top: 30px;
+	}
+}
+
+.location {
+	font-size: 14px;
+	font-weight: $font-weight-medium;
+	color: $primary-color;
+	padding-top: 5px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		font-size: 18px;
+	}
+}
+
+.tags {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding-top: 10px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		padding-top: 20px;
+	}
+}
+
+.secondary {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 16px;
+	padding-bottom: 13px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		flex-direction: column;
+		align-items: end;
+		gap: 20px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+}
+
+.rating {
+	display: flex;
+	flex-direction: row;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		order: 2;
+	}
+}
+
+.host {
+	display: flex;
+	flex-direction: row;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: none;
+	}
+}
+
+.description,
+.equipments {
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		width: 582px;
+	}
+}
