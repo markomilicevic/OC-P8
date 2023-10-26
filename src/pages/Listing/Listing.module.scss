@@ -1,0 +1,21 @@
+@use "../../layouts/Page/variables.scss" as *;
+
+.listing {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		max-width: $desktop-breakpoint-width;
+	}
+}
+
+.carousel {
+	height: 255px;
+
+	@media screen and (min-width: $desktop-breakpoint-width) {
+		height: 415px;
+	}
+}
