@@ -7,8 +7,8 @@ import Listing from "./pages/Listing";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
-// Data-Router is mandatory in order to have the `loader`s and `errorElement`s
-// SOURCE: https://reactrouter.com/en/dev/route/error-element
+// Data-Router is recommended for new projets
+// SOURCE: https://reactrouter.com/en/dev/routers/create-browser-router
 const router = createBrowserRouter([
 	{
 		element: <Page />,
