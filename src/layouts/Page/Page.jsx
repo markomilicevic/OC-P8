@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styles from "./Page.module.scss";
 
-const Page = ({ children }) => (
+const Page = () => (
 	<div className={styles.page}>
 		<Header />
 		<Outlet />

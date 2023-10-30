@@ -10,7 +10,7 @@ const Dropdown = ({ title, description, isHeadline }) => {
 		setIsOpen(!isOpen);
 	};
 
-	const TitleTag = isHeadline ? `h2` : `strong`;
+	const TitleTag = isHeadline ? "h2" : "strong";
 
 	return (
 		<div className={`${styles.dropdown} ${isOpen ? styles.is_open : styles.is_closed}`}>

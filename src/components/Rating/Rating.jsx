@@ -18,7 +18,7 @@ const Rating = ({ currentValue, maximumValue }) => {
 					key={index}
 					className={styles.star}
 					src={star === FILLED_STAR ? filledStar : emptyStar}
-					alt={star === FILLED_STAR ? "Notation sous forme d'étoile remplie" : "Notation sous forme d'étoile vide"}
+					alt={`Notation avec des étoiles (Note de ${currentValue} sur ${maximumValue})`}
 				/>
 			))}
 		</div>
