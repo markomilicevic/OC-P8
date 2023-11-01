@@ -68,10 +68,10 @@ const Listing = () => {
 					</div>
 					<div className={styles.details}>
 						<div className={styles.description}>
-							<Dropdown title="Description" description={listing.description} defaultIsOpen={false} />
+							<Dropdown title="Description" description={listing.description} />
 						</div>
 						<div className={styles.equipments}>
-							<Dropdown title="Équipements" description={listing.equipments.join("\n")} defaultIsOpen={false} />
+							<Dropdown title="Équipements" description={listing.equipments.join("\n")} />
 						</div>
 					</div>
 				</>
