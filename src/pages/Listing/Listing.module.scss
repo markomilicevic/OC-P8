@@ -109,7 +109,7 @@
 	@media screen and (min-width: $desktop-breakpoint-width) {
 		flex-direction: row;
 		justify-content: space-between;
-		gap: none;
+		gap: 0;
 	}
 }
 
